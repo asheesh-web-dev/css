@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{ /* flex container */
+            border: 1px solid;
+            padding: .5rem;
+            margin: .2rem;
+            display: flex;
+            flex-direction: row;
+            gap: .5rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 80vh;
+            align-content: flex-start;
+        }
+        .item{ /* flex items */
+            border: 1px solid;
+            background-color: dodgerblue;
+            flex-grow: 0;
+            flex: 1;
+            width: 10rem;
+            padding: .5em;
+        }
+
+        /* .item-3{
+            align-self:  ;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./assets/images/lamps.jpeg" alt="lamps" class="item item-1"><img src="./assets/images/nature.jpeg" alt="nature" class="item item-2">
+        <div class="item item-3">1</div>
+        <div class="item item-4">2</div>
+        <div class="item item-5">3 Lorem, ipsum dolor.</div>
+        <div class="item item-6">4</div>
+        <div class="item item-7">5 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestiae.</div>
+        <div class="item item-8">6</div>
+        <div class="item item-9">7</div>
+        <div class="item item-10">8</div>
+        <div class="item item-11">9</div>
+        <div class="item item-12">10</div>
+        <div class="item item-13">11</div>
+        <div class="item item-14">12</div>
+    </div>
+</body>
+</html>
