@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-card</title>
+    <style>
+     *{
+        box-sizing: border-box;
+     }
+
+     .card-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-auto-rows: 1fr;
+        gap: .1rem;
+        background-color: #999;
+     }
+
+     .card{
+        display: grid;
+        background-color: #ccc;
+        grid-template-rows: auto 1fr auto;
+        border: 1px solid black;
+        
+     }
+     .card__title{
+        background-color: #222;
+        color: white;
+        margin: 0;
+        padding: .4rem;
+     }
+
+     .card__content{
+        background-color: #ddd;
+        margin: 0;
+        padding: .4rem;
+     }
+
+     .card__button{
+        background-color: #333 ;
+        color: white;
+        font-weight: bold;
+        padding: .4rem;
+        font-size: 1rem;
+        border: 0;
+     }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <article class="card card-container__item">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
+          dignissimos?
+        </p>
+        <button class="card__button">Lorem.</button>
+      </article>
+      <article class="card card-container__item">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
+          dignissimos? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Eos, ad.
+        </p>
+        <button class="card__button">Lorem.</button>
+      </article>
+      <article class="card card-container__item">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
+          dignissimos? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci, odit, cupiditate, natus distinctio optio ea temporibus eius
+          beatae voluptatem sapiente sit obcaecati non accusamus officia. Eaque
+          dolorem perspiciatis saepe quos?Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ullam beatae, reprehenderit magni totam
+          eaque numquam animi tempora eum quo neque necessitatibus dicta, sint
+          eveniet! Iure officia saepe culpa rerum adipisci magni autem sint, vel
+          et quidem,
+        </p>
+        <button class="card__button">Lorem.</button>
+      </article>
+    </section>
+  </body>
+</html>
