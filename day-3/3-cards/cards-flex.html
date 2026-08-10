@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 cards using flex</title>
+    <style>
+      .card-container {
+        display: flex;
+        gap: 0.1rem;
+        width: min(1100px, 95%);
+        border: 1px solid;
+        padding: 0.1rem;
+        background-color: #555;
+      }
+      .card {
+        flex: 1;
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+      }
+      .card__text {
+        flex: 1;
+        margin: 0;
+        padding: 0.5rem;
+      }
+
+      .card__title {
+        background-color: #111;
+        margin: 0;
+        color: white;
+        padding: 0.5rem;
+      }
+
+      .card__button {
+        border: 0;
+        padding: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+        background-color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <article class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          rerum temporibus non ut sapiente, autem possimus nam alias! Nisi ipsam
+          dolore aspernatur unde tenetur consequatur esse reiciendis similique
+          pariatur consequuntur.
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          rerum temporibus non ut sapiente, autem possimus nam alias! Nisi ipsam
+          dolore aspernatur unde tenetur consequatur esse reiciendis similique
+          pariatur consequuntur. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Asperiores maiores aspernatur ex non dolor quaerat
+          sit dignissimos odit neque accusantium!
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          rerum temporibus non ut sapiente, autem possimus nam alias! Nisi ipsam
+          dolore aspernatur unde tenetur consequatur esse reiciendis similique
+          pariatur consequuntur. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Magni harum eaque, sint porro hic pariatur minima
+          dolores? Sapiente ab dolorum quaerat eum totam eius quia quam, quae
+          doloremque repellat perferendis saepe minus sit. Amet nihil dolore
+          excepturi alias facere optio dolor officia, expedita ut molestias
+          repellat est saepe consequatur quae!
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </article>
+    </section>
+  </body>
+</html>
