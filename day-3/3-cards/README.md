@@ -7,3 +7,9 @@
     2. text content
     3. a button at bottom
     4. width of container should not be more than 1100px and if view-port width goes below 1100px it should take 95% of parents width.
+
+2. desgin the 3 cards using grid with
+    1. titile
+    2. text content
+    3. a button at bottom
+    4. width of container should not be more than 1100px and if view-port width goes below 1100px it should take 95% of parents width.

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 cards using grid</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 0.5rem;
+        width: min(1100px , 95%);
+        background-color: #eee;
+        padding: .5rem;
+      }
+
+      .card {
+        background-color: white;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      .card__title{
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: .5em;
+      }
+
+      .card__text{
+        margin: 0;
+        padding: .5rem;
+      }
+
+      .card__button{
+        background-color: #555;
+        color: #fff;
+        border: 0;
+        font-size: 1em;
+        padding: .5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <artice class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          eum. Accusamus praesentium voluptatum tempora cupiditate ratione iure
+          officiis tempore numquam tenetur asperiores enim autem provident fuga,
+          maxime pariatur id porro, perspiciatis eum ex adipisci vel ipsa
+          eveniet omnis voluptas? Ipsum.
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </artice>
+      <artice class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          eum. Accusamus praesentium voluptatum tempora cupiditate ratione iure
+          officiis tempore numquam tenetur asperiores enim autem provident fuga,
+          maxime pariatur id porro, perspiciatis eum ex adipisci vel ipsa
+          eveniet omnis voluptas? Ipsum. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Quaerat laborum corrupti sit neque perspiciatis,
+          quas nemo cumque pariatur vero nisi.
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </artice>
+      <artice class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          eum. Accusamus praesentium voluptatum tempora cupiditate ratione iure
+          officiis tempore numquam tenetur asperiores enim autem provident fuga,
+          maxime pariatur id porro, perspiciatis eum ex adipisci vel ipsa
+          eveniet omnis voluptas? Ipsum. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quae obcaecati expedita minus accusamus tempora,
+          veritatis minima! Et praesentium ipsa illum minus libero quia adipisci
+          explicabo ea placeat recusandae enim nisi dicta, sint sed aliquam
+          tempora non doloribus debitis sapiente fugit illo pariatur.
+          Dignissimos natus quod recusandae tempore non, aut vitae!
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </artice>
+      <!-- <artice class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          eum. Accusamus praesentium voluptatum tempora cupiditate ratione iure
+          officiis tempore numquam tenetur asperiores enim autem provident fuga,
+          maxime pariatur id porro, perspiciatis eum ex adipisci vel ipsa
+          eveniet omnis voluptas? Ipsum. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quae obcaecati expedita minus accusamus tempora,
+          veritatis minima! Et praesentium ipsa illum minus libero quia adipisci
+          explicabo ea placeat recusandae enim nisi dicta, sint sed aliquam
+          tempora non doloribus debitis sapiente fugit illo pariatur.
+          Dignissimos natus quod recusandae tempore non, aut vitae! Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Asperiores animi dolores
+          voluptatibus nam illo unde fuga id minima iste enim et nulla ex, nihil
+          libero natus eum assumenda magni tenetur? Qui ullam quam repellat,
+          quaerat aliquam id dolores necessitatibus incidunt?
+        </p>
+        <button class="btn card__button">Lorem.</button>
+      </artice> -->
+    </section>
+  </body>
+</html>
