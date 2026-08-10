@@ -15,35 +15,41 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 1fr;
         gap: 0.5rem;
-        width: min(1100px , 95%);
+        width: min(1100px, 95%);
         background-color: #eee;
-        padding: .5rem;
+        padding: 0.5rem;
       }
 
       .card {
         background-color: white;
         display: grid;
         grid-template-rows: auto 1fr auto;
+        transition: all 0.2s ease-in-out;
       }
 
-      .card__title{
+      .card:hover {
+        translate: 0 -0.2em;
+        scale: 1.03;
+      }
+
+      .card__title {
         background-color: #000;
         color: #fff;
         margin: 0;
-        padding: .5em;
+        padding: 0.5em;
       }
 
-      .card__text{
+      .card__text {
         margin: 0;
-        padding: .5rem;
+        padding: 0.5rem;
       }
 
-      .card__button{
+      .card__button {
         background-color: #555;
         color: #fff;
         border: 0;
         font-size: 1em;
-        padding: .5rem;
+        padding: 0.5rem;
         font-weight: bold;
       }
     </style>
