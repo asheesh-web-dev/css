@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainable Cothing Brand</title>
+    <style>
+      :root {
+        --color-earth-green: #2d4a3e;
+        --color-sand: #fcf9f5;
+        --color-text-dark: #ac2b24;
+        --color-text-muted: #556b60;
+        --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        --transition-smooth: all 0.3s ease;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-main);
+        background-color: var(--color-sand);
+        color: var(--color-text-dark);
+        line-height: 1.6;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 4rem 2rem;
+      }
+
+      .hero__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 4em;
+      }
+
+      .hero__content {
+        flex: 1;
+      }
+
+      .hero__tagline {
+        display: inline-block;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        color: var(--color-earth-green);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .hero__title {
+        font-size: 3.5rem;
+        line-height: 1.15;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero__description {
+        font-size: 1.15;
+        color: var(--color-text-muted);
+        margin-bottom: 2.5rem;
+        max-width: 500px;
+      }
+
+      .hero__cta-group {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .hero__image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero__image {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: dodgerblue;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: var(--transition-smooth);
+      }
+
+      .btn--primary {
+        background-color: var(--color-earth-green);
+        color: var(--color-sand);
+        border: 2px solid var(--color-earth-green);
+      }
+
+      .btn--primary:hover {
+        background-color: #1e332a;
+        border-color: #1e332a;
+      }
+
+      .btn--secondary {
+        background-color: transparent;
+        color: var(--color-earth-green);
+        border: 2px solid var(--color-earth-green);
+      }
+
+      .btn--secondary:hover {
+        background-color: rgba(45, 74, 62, 0.05);
+      }
+
+      @media (max-width: 968px) {
+        .hero__container {
+          flex-direction: column-reverse;
+          gap: 2.5rem;
+          text-align: center;
+        }
+
+        .hero__title {
+          font-size: 2.5rem;
+        }
+        .hero__description {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .hero__cta-group {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <span class="hero__tagline">100% Oraganic & Ethically Made</span>
+          <h1 class="hero__title">
+            Clothing that cares for you and the planet
+          </h1>
+          <p class="hero__description">
+            Discover our new summer collection crafted entirely from certified
+            organic cotton and recycled materials. Timeless style, zero
+            compromise.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#" class="btn btn--primary">Shop New Arrivals</a>
+            <a href="" class="btn btn--secondary">Our Mission</a>
+          </div>
+        </div>
+        <div class="hero__image-container">
+          <img
+            src="./assests/images/sustanable-clothing.jpg"
+            alt="Sustainable linen clothing collection"
+            class="hero__image"
+          />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
