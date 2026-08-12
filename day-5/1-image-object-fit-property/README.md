@@ -19,7 +19,7 @@ For `object-fit` to work, you must define both a `width` and a `height` on the `
   - Preserves the aspect ratio, making it ideal for banners and cards.
 - **`none`**
   - Ignores the box dimensions completely and displays the image at its original size.
-  - Overflows or crops heavily without any scaling. [10, 11, 12]
+  - Overflows or crops heavily without any scaling
 - **`scale-down`**
   - Compares none and contain automatically behind the scenes.
   - Selects whichever option results in the smaller final image size.
