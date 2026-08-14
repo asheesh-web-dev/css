@@ -4,7 +4,7 @@
 
 ### Image Overflowing Container:
 
-`max-width: 100%` and `height: auto`. This forces the image to scale down proportionally to fit the parent width.
+`width: 100%` and `height: auto`. This forces the image to scale down proportionally to fit the parent width.
 
 ### gaps
 
@@ -24,7 +24,7 @@ Adding `display: block` to your image strips away its text-like alignment rules,
 
 ```css
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block; /* Removes the bottom space and fixes layout */
 }
