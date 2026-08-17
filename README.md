@@ -7,3 +7,7 @@
 ## day -7
 
 - [creating img gallery using `flex-box`](./day-7/1-img-tag/README.md)
+
+## day -8
+
+- [create img gallery using `flex-box`](./day-8/README.md)
