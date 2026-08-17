@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>img gallery with flex</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .gallery__title{
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        padding: 1em;
+      }
+      .gallery__items{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 400px;
+      }
+
+      .item__img {
+        height: 300px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .item__info {
+        display: flex;
+        flex-direction: column;
+      }
+      .item__action {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3em;
+        color: white;
+      }
+      .item__price {
+        display: block;
+        background-color: #333;
+        padding: 0.3em;
+        font-weight: bold;
+        flex-shrink: 0;
+      }
+
+      .item__purchase-link {
+        background-color: green;
+        text-decoration: none;
+        color: white;
+        padding: 0.3em;
+        font-weight: bold;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+
+      .item__tags {
+        display: flex;
+        gap: 0.3em;
+        padding: 0.3em;
+        flex-wrap: wrap;
+      }
+
+      .item__tag {
+        background-color: #f6f6f6;
+        display: inline-block;
+        padding: 0.3em;
+        border-radius: 5px;
+        color: black;
+      }
+
+      .item__tag:hover {
+        background-color: #e2dede;
+        cursor: pointer;
+      }
+
+      header {
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 0.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery__title"><h2>gallery</h2></div>
+
+      <div class="gallery__items">
+        <article class="item">
+          <img
+            src="./assets/images/coffee-shop.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/costal-landscape.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Tempore?</span
+              ><span class="item__tag">Assumenda.</span
+              ><span class="item__tag">Laboriosam?</span
+              ><span class="item__tag">Cum.</span
+              ><span class="item__tag">Nesciunt!</span
+              ><span class="item__tag">Dignissimos.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/domestic-life.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">Cum?</span
+              ><span class="item__tag">Nulla!</span
+              ><span class="item__tag">Voluptatem.</span
+              ><span class="item__tag">Quos.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/remote-work.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Tempore?</span
+              ><span class="item__tag">Assumenda.</span
+              ><span class="item__tag">Laboriosam?</span
+              ><span class="item__tag">Cum.</span
+              ><span class="item__tag">Nesciunt!</span
+              ><span class="item__tag">Dignissimos.</span
+              ><span class="item__tag">Veniam?</span
+              ><span class="item__tag">Ipsum.</span
+              ><span class="item__tag">Ex!</span
+              ><span class="item__tag">Eligendi.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/ring-of-fire.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Tempore?</span
+              ><span class="item__tag">Assumenda.</span
+              ><span class="item__tag">Laboriosam?</span
+              ><span class="item__tag">Cum.</span
+              ><span class="item__tag">Nesciunt!</span
+              ><span class="item__tag">Dignissimos.</span
+              ><span class="item__tag">Veniam?</span
+              ><span class="item__tag">Ipsum.</span
+              ><span class="item__tag">Ex!</span
+              ><span class="item__tag">Eligendi.</span
+              ><span class="item__tag">Animi?</span
+              ><span class="item__tag">Fugiat.</span
+              ><span class="item__tag">Unde.</span
+              ><span class="item__tag">Ducimus?</span
+              ><span class="item__tag">Porro?</span
+              ><span class="item__tag">Aspernatur?</span
+              ><span class="item__tag">Veritatis!</span
+              ><span class="item__tag">Eum!</span
+              ><span class="item__tag">Eligendi?</span
+              ><span class="item__tag">Cum?</span
+              ><span class="item__tag">Nulla!</span
+              ><span class="item__tag">Voluptatem.</span
+              ><span class="item__tag">Quos.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/domestic-life.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Tempore?</span
+              ><span class="item__tag">Assumenda.</span
+              ><span class="item__tag">Laboriosam?</span
+              ><span class="item__tag">Cum.</span
+              ><span class="item__tag">Nesciunt!</span
+              ><span class="item__tag">Dignissimos.</span
+              ><span class="item__tag">Veniam?</span
+              ><span class="item__tag">Ipsum.</span
+              ><span class="item__tag">Ex!</span
+              ><span class="item__tag">Eligendi.</span
+              ><span class="item__tag">Animi?</span
+              ><span class="item__tag">Fugiat.</span
+              ><span class="item__tag">Unde.</span
+              ><span class="item__tag">Ducimus?</span
+              ><span class="item__tag">Porro?</span
+              ><span class="item__tag">Aspernatur?</span
+              ><span class="item__tag">Veritatis!</span
+              ><span class="item__tag">Eum!</span
+              ><span class="item__tag">Eligendi?</span
+              ><span class="item__tag">Cum?</span
+              ><span class="item__tag">Nulla!</span
+              ><span class="item__tag">Voluptatem.</span
+              ><span class="item__tag">Quos.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/coffee-shop.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Tempore?</span
+              ><span class="item__tag">Assumenda.</span
+              ><span class="item__tag">Laboriosam?</span
+              ><span class="item__tag">Cum.</span
+              ><span class="item__tag">Nesciunt!</span
+              ><span class="item__tag">Dignissimos.</span
+              ><span class="item__tag">Veniam?</span
+              ><span class="item__tag">Ipsum.</span
+              ><span class="item__tag">Ex!</span
+              ><span class="item__tag">Eligendi.</span
+              ><span class="item__tag">Animi?</span
+              ><span class="item__tag">Fugiat.</span
+              ><span class="item__tag">Unde.</span
+              ><span class="item__tag">Ducimus?</span
+              ><span class="item__tag">Porro?</span
+              ><span class="item__tag">Aspernatur?</span
+              ><span class="item__tag">Veritatis!</span
+              ><span class="item__tag">Eum!</span
+              ><span class="item__tag">Eligendi?</span
+              ><span class="item__tag">Cum?</span
+              ><span class="item__tag">Nulla!</span
+              ><span class="item__tag">Voluptatem.</span
+              ><span class="item__tag">Quos.</span>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img
+            src="./assets/images/costal-landscape.jpg"
+            alt="Coffe Shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__action">
+              <span class="item__price">$ 10.5</span>
+              <a href="#" class="item__purchase-link">Buy Now</a>
+            </div>
+            <div class="item__tags">
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Coffe Shop</span>
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Vel.</span
+              ><span class="item__tag">At?</span
+              ><span class="item__tag">Distinctio.</span
+              ><span class="item__tag">Omnis!</span
+              ><span class="item__tag">Quae!</span
+              ><span class="item__tag">Suscipit?</span
+              ><span class="item__tag">Cum?</span
+              ><span class="item__tag">Nulla!</span
+              ><span class="item__tag">Voluptatem.</span
+              ><span class="item__tag">Quos.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
