@@ -11,3 +11,7 @@
 ## day -8
 
 - [create img gallery using `flex-box`](./day-8/README.md)
+
+## day -9
+
+- [img gallery with grid](./day-9/README.md)
