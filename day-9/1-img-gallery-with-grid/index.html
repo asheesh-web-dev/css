@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img gallery with grid</title>
+
+    <style>
+
+      *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .gallery__items{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr) ;
+        grid-auto-rows: minmax(300,500);
+      }
+
+      .item{
+        padding: .5em;
+        background-color: red;
+        border: 2px solid;
+        display: grid;
+        gap: .5em;
+        grid-template-rows: 1fr auto;
+      }
+
+      .item__img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      .item__info {
+        display: grid;
+        align-self: self-end;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+      }
+
+      .item__btn{
+        justify-self: right;
+        text-decoration: none;
+      }
+
+      .item__tags{
+        grid-column: 1 / span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">
+      <h2 class="gallery__title">gallery</h2>
+      <section class="gallery__items">
+        <article class="item">
+          <img
+            src="./assets/images/coffee-shop.jpg"
+            alt="coffee coffee-shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__price">$50</div>
+            <a href="#" class="item__btn">Buy Now</a>
+            <div class="item__tags">
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Neque.</span
+              ><span class="item__tag">Ab.</span
+              ><span class="item__tag">Sequi.</span
+              ><span class="item__tag">Quaerat.</span
+              ><span class="item__tag">Facere?</span
+              ><span class="item__tag">Nulla.</span
+              ><span class="item__tag">Voluptates.</span>
+            </div>
+          </div>
+        </article>
+
+         <article class="item">
+          <img
+            src="./assets/images/costal-landscape.jpg"
+            alt="coffee coffee-shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__price">$50</div>
+            <a href="#" class="item__btn">Buy Now</a>
+            <div class="item__tags">
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Neque.</span
+              ><span class="item__tag">Ab.</span
+              ><span class="item__tag">Sequi.</span
+              ><span class="item__tag">Quaerat.</span
+              ><span class="item__tag">Facere?</span
+              ><span class="item__tag">Nulla.</span
+              ><span class="item__tag">Voluptates.</span>
+            </div>
+          </div>
+        </article>
+
+         <article class="item">
+          <img
+            src="./assets/images/ring-of-fire.jpg"
+            alt="coffee coffee-shop"
+            class="item__img"
+          />
+          <div class="item__info">
+            <div class="item__price">$50</div>
+            <a href="#" class="item__btn">Buy Now</a>
+            <div class="item__tags">
+              <span class="item__tag">Lorem.</span
+              ><span class="item__tag">Neque.</span
+              ><span class="item__tag">Ab.</span
+              ><span class="item__tag">Sequi.</span
+              ><span class="item__tag">Quaerat.</span
+              ><span class="item__tag">Facere?</span
+              ><span class="item__tag">Nulla.</span
+              ><span class="item__tag">Voluptates.</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+  </body>
+</html>
