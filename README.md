@@ -15,3 +15,7 @@
 ## day -9
 
 - [img gallery with grid](./day-9/README.md)
+
+## day -10
+
+-[continue day9 img gallery](./day-9/README.md)
