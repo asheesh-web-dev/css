@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Cards using flex-box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .card-container {
+        display: flex;
+        gap: 0.2em;
+        width: 90vw;
+        margin: auto;
+        margin-top: 1rem;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        background-color: rgba(207, 207, 207, 0.729);
+        flex: 1;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .card:hover {
+        scale: 1.018;
+        translate: 0 -2px;
+      }
+
+      .card__title {
+        color: white;
+        align-self: stretch;
+        background-color: black;
+        padding: 0.3em;
+      }
+
+      .card__text {
+        background-color: white;
+        padding: 0.3em;
+        flex: 1;
+      }
+
+      .card__btn {
+        align-self: center;
+        border: none;
+        margin: 0.3em;
+        padding: 0.4em;
+        border-radius: 5px;
+        background-color: rgb(186, 182, 182);
+        transition: all 0.4s ease-in-out;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .card__btn:hover {
+        background-color: rgb(47, 47, 47);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <article class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          velit corporis.
+        </p>
+        <button class="card__btn">Lorem.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Dolore.</h2>
+        <p class="card__text">
+          Numquam hic dolorem, officia eos obcaecati, nulla perspiciatis eveniet
+          quasi atque dolores, officiis incidunt vitae ab cumque illum neque
+          dolorum veritatis!
+        </p>
+        <button class="card__btn">Error.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Alias?</h2>
+        <p class="card__text">
+          Animi quisquam reiciendis accusantium porro odit? Itaque amet
+          praesentium ullam. Deleniti provident, reiciendis debitis cumque
+          possimus, inventore repellat atque rerum laudantium beatae, quidem
+          placeat. A inventore nulla consectetur? Quaerat, esse sapiente.
+        </p>
+        <button class="card__btn">Id.</button>
+      </article>
+    </section>
+  </body>
+</html>
