@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 cards using grid</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card-container {
+        margin: auto;
+        width: 75vw;
+        display: grid;
+        gap: .3em;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .card {
+        background-color: #eee;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        border: 1px solid;
+      }
+
+      .card__title {
+        padding: 0.3em;
+        background-color: black;
+        color: white;
+      }
+
+      .card__text {
+        padding: 0.3em;
+      }
+      .card__button {
+        justify-self: center;
+        border: 0;
+        background-color: #444;
+        padding: 0.3em;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      .card__button:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <article class="card">
+        <h2 class="card__title">Lorem.</h2>
+        <p class="card__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          voluptatibus corrupti possimus repudiandae ab ipsum inventore eius
+          cupiditate earum!
+        </p>
+        <button class="card__button">Lorem.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Nisi.</h2>
+        <p class="card__text">
+          Asperiores rerum ipsum, pariatur aliquam ea nobis, necessitatibus ipsa
+          quis ratione nemo, itaque voluptate autem hic numquam inventore
+          architecto illum facere saepe blanditiis iusto id veniam
+          exercitationem. At, quam.
+        </p>
+        <button class="card__button">Accusantium.</button>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Harum.</h2>
+        <p class="card__text">
+          Autem laboriosam saepe quis voluptatum consectetur, quo fugiat ratione
+          eius quaerat exercitationem nobis obcaecati nisi facere impedit esse
+          assumenda accusamus recusandae magnam. Ad accusantium reprehenderit
+          corrupti. Rem impedit et, nemo temporibus, sed cumque debitis
+          deserunt, enim placeat animi consequatur!
+        </p>
+        <button class="card__button">Impedit.</button>
+      </article>
+    </section>
+  </body>
+</html>
