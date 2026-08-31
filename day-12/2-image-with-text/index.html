@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image with header and subheader</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .images {
+        display: flex;
+        gap: 0.5em;
+        padding: 0.5em;
+        flex-direction: column;
+      }
+
+      .card {
+        flex-basis: 400px;
+        aspect-ratio: 1/1;
+        position: relative;
+        flex-grow: 1;
+      }
+
+      .card__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+      }
+
+      .card__text-overlay {
+        position: absolute;
+        bottom: 0;
+        padding: 0.5em;
+      }
+
+      .card__sub-header {
+        color: rgb(238, 235, 235);
+      }
+
+      .card__header {
+        color: rgb(238, 238, 238);
+      }
+
+      .card__text-overlay--bottom{
+        top:0;
+      }
+
+      @media (min-width: 576px) {
+        .images {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="images">
+      <article class="card">
+        <img
+          src="./assets/images/coffee-shop.jpg"
+          alt="Coffe Shop"
+          class="card__img"
+        />
+        <div class="card__text-overlay">
+          <h3 class="card__sub-header">Lorem, ipsum dolor.</h3>
+          <h2 class="card__header">Lorem ipsum dolor sit</h2>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="./assets/images/coffee-shop.jpg"
+          alt="Coffe Shop"
+          class="card__img"
+        />
+        <div class="card__text-overlay card__text-overlay--bottom">
+          <h3 class="card__sub-header">Lorem, ipsum dolor.</h3>
+          <h2 class="card__header">Lorem ipsum dolor sit</h2>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
