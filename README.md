@@ -19,3 +19,7 @@
 ## day -10
 
 -[continue day9 img gallery](./day-9/README.md)
+
+## day- 12
+
+- [create image with header and subheader inside the image](./day-12/README.md)
