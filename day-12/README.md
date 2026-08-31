@@ -32,5 +32,18 @@ image with header and subheader at the top and bottom within image.
 
 ## solution- 2
 
-### using image as background image inside a container having text
+### using image as background image inside flex items
 
+#### solution-2 views
+
+##### mobile view
+
+![mobile view](./assets/images/header-sub-headerinside-image-mobile-view.png)
+
+##### desktop view
+
+![desktop view](./assets/images/header-sub-headerinside-image-desktop-view.png)
+
+## solution-3
+
+<!-- TODO: using grid  -->
