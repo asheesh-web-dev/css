@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background image with grid</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .card-container {
+        display: grid;
+        gap: 0.5em;
+        padding: 0.5em;
+      }
+
+      .card {
+        background-image: url(./assets/images/coffee-shop.jpg);
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1/1;
+        display: grid;
+        align-content: start;
+      }
+
+      .card__text {
+        padding: 0.5em;
+        background: linear-gradient(transparent, rgba(220, 216, 216, 0.5));
+      }
+
+      .card__text--bottom {
+        align-content: end;
+      }
+
+      @media (min-width: 576px) {
+        .card-container {
+          grid-template-columns: repeat(auto-fit, minmax(calc(25% - 1em), 1fr));
+          /* calc(25% - 1em) -> 25% width minus 1em gap */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <article class="card">
+        <div class="card__text">
+          <h3 class="card__sub-header">Lorem, ipsum dolor.</h3>
+          <h2 class="card__header">Lorem ipsum dolor sit amet.</h2>
+        </div>
+      </article>
+      <article class="card card__text--bottom">
+        <div class="card__text">
+          <h3 class="card__sub-header">Lorem, ipsum dolor.</h3>
+          <h2 class="card__header">Lorem ipsum dolor sit amet.</h2>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

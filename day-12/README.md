@@ -38,12 +38,25 @@ image with header and subheader at the top and bottom within image.
 
 ##### mobile view
 
-![mobile view](./assets/images/header-sub-headerinside-image-mobile-view.png)
+![mobile view](./3-image-with-headers/assets/images/header-sub-headerinside-image-mobile-view.png)
 
 ##### desktop view
 
-![desktop view](./assets/images/header-sub-headerinside-image-desktop-view.png)
+![desktop view](./3-image-with-headers/assets/images/header-sub-headerinside-image-desktop-view.png)
 
 ## solution-3
 
-<!-- TODO: using grid  -->
+### using nested grids
+
+- outer grid to organise cards in a grid
+- inner gird to place text-haders at start or end.
+
+#### solution-3 views
+
+##### solution-3 mobile view
+
+![mobile view](./4-image-with-haders-using-grid/assets/images/headers-inside-image-using-grid-mobile-view.png)
+
+##### solution-3 desktop view
+
+![destop view](./4-image-with-haders-using-grid/assets/images/headers-inside-image-using-grid-desktop-view.png)
